@@ -37,6 +37,29 @@ This SDK only helps extension authors produce well-formed extension packages.
 - `validateExtensionManifest(...)`
 - `validateAgentCatalog(...)`
 
+## Build and publish
+
+This package is set up as an ESM SDK with a standard TypeScript build pipeline.
+
+Typical commands:
+
+```bash
+npm install
+npm run build
+```
+
+Build output is emitted to:
+
+```text
+dist/
+```
+
+Consumers should import from:
+
+```ts
+import { defineExtension, validateExtensionManifest } from "@valtren-ai/extension-sdk";
+```
+
 ## Intended users
 
 - customer extension teams

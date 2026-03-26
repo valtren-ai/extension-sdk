@@ -80,3 +80,11 @@ export function validateExtensionManifest(manifest: ExtensionManifest): string[]
   errors.push(...validateStepExecutors(manifest.step_executors));
   return errors;
 }
+
+export function ensureValidExtensionManifest(manifest: ExtensionManifest): ExtensionManifest {
+  const errors = validateExtensionManifest(manifest);
+  if (errors.length) {
+    throw new Error(`Invalid Valtren AI extension manifest:\n- ${errors.join("\n- ")}`);
+  }
+  return manifest;
+}

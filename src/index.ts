@@ -1,5 +1,10 @@
 export { defineExtension } from "./manifest.js";
-export { validateAgentCatalog, validateExtensionManifest, validateStepExecutors } from "./validate.js";
+export {
+  ensureValidExtensionManifest,
+  validateAgentCatalog,
+  validateExtensionManifest,
+  validateStepExecutors,
+} from "./validate.js";
 export type {
   ExtensionAgentCatalog,
   ExtensionCatalogStep,
