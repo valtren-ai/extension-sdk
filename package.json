@@ -1,0 +1,24 @@
+{
+  "name": "@valtren-ai/extension-sdk",
+  "version": "0.1.0",
+  "description": "Types, helpers, validators, and scaffolds for building Valtren AI extensions.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./manifest": "./src/manifest.ts",
+    "./validate": "./src/validate.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "valtren",
+    "ai",
+    "extensions",
+    "workflow",
+    "agents"
+  ],
+  "license": "MIT"
+}
