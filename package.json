@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Types, helpers, validators, and scaffolds for building Valtren AI extensions.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valtren-ai/extension-sdk.git"
+  },
+  "homepage": "https://github.com/valtren-ai/extension-sdk#readme",
+  "bugs": {
+    "url": "https://github.com/valtren-ai/extension-sdk/issues"
+  },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -29,7 +37,8 @@
   "scripts": {
     "build": "tsup",
     "clean": "rm -rf dist",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "valtren",
@@ -39,6 +48,9 @@
     "agents"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "tsup": "^8.2.4",
     "typescript": "^5.6.3"

@@ -60,6 +60,21 @@ Consumers should import from:
 import { defineExtension, validateExtensionManifest } from "@valtren-ai/extension-sdk";
 ```
 
+Install from npm:
+
+```bash
+npm install @valtren-ai/extension-sdk@^0.1.0
+```
+
+## Publishing
+
+Recommended first release flow:
+
+1. add `NPM_TOKEN` as a GitHub Actions secret
+2. create a version tag such as `v0.1.0`
+3. push the tag
+4. let the publish workflow release the package to npm
+
 ## Intended users
 
 - customer extension teams
