@@ -140,6 +140,11 @@ Recommended first release flow:
 - `valtren-ai/extension-examples`
   - public extension examples from hello world to advanced packs
 
+## Support
+
+- Report issues: [GitHub Issues](https://github.com/valtren-ai/extension-sdk/issues)
+- Scaffold examples and playbooks: [valtren-ai/extension-examples](https://github.com/valtren-ai/extension-examples)
+
 ## License
 
 MIT
