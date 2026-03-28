@@ -45,6 +45,12 @@ This SDK only helps extension authors produce well-formed extension packages.
 Create a starter extension with the built-in CLI:
 
 ```bash
+npx create-valtren-extension my-extension --runtime node-pack
+```
+
+If you prefer, you can also call the SDK package directly:
+
+```bash
 npx @valtren-ai/extension-sdk create-valtren-extension my-extension --runtime node-pack
 ```
 
@@ -56,6 +62,12 @@ Supported runtime templates:
 - `sidecar-python`
 
 You can also choose a target directory:
+
+```bash
+npx create-valtren-extension my-extension --runtime org-zip-python --dir ./extensions/my-extension
+```
+
+Direct SDK-package equivalent:
 
 ```bash
 npx @valtren-ai/extension-sdk create-valtren-extension my-extension --runtime org-zip-python --dir ./extensions/my-extension
@@ -94,6 +106,12 @@ Install from npm:
 
 ```bash
 npm install @valtren-ai/extension-sdk@^0.2.0
+```
+
+Shorthand scaffold package:
+
+```bash
+npm install -g create-valtren-extension
 ```
 
 ## Publishing
