@@ -1,6 +1,7 @@
 # Valtren AI Extension SDK
 
 [![npm version](https://img.shields.io/npm/v/%40valtren-ai%2Fextension-sdk)](https://www.npmjs.com/package/@valtren-ai/extension-sdk)
+[![CI](https://github.com/valtren-ai/extension-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/valtren-ai/extension-sdk/actions/workflows/ci.yml)
 [![Publish SDK](https://github.com/valtren-ai/extension-sdk/actions/workflows/publish.yml/badge.svg)](https://github.com/valtren-ai/extension-sdk/actions/workflows/publish.yml)
 
 Types, helpers, validators, and scaffolds for building Valtren AI extensions.
