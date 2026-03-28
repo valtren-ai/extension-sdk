@@ -40,6 +40,33 @@ This SDK only helps extension authors produce well-formed extension packages.
 - `validateExtensionManifest(...)`
 - `validateAgentCatalog(...)`
 
+## Scaffold a new extension
+
+Create a starter extension with the built-in CLI:
+
+```bash
+npx @valtren-ai/extension-sdk create-valtren-extension my-extension --runtime node-pack
+```
+
+Supported runtime templates:
+
+- `node-pack`
+- `org-zip-node`
+- `org-zip-python`
+- `sidecar-python`
+
+You can also choose a target directory:
+
+```bash
+npx @valtren-ai/extension-sdk create-valtren-extension my-extension --runtime org-zip-python --dir ./extensions/my-extension
+```
+
+The generated scaffold is intentionally small. After scaffolding:
+
+- replace placeholder descriptions and logic
+- read the guides in `valtren-ai/extension-examples`
+- add health, smoke-test, versioning, and rollback notes before production rollout
+
 ## Build and publish
 
 This package is set up as an ESM SDK with a standard TypeScript build pipeline.
@@ -66,7 +93,7 @@ import { defineExtension, validateExtensionManifest } from "@valtren-ai/extensio
 Install from npm:
 
 ```bash
-npm install @valtren-ai/extension-sdk@^0.1.0
+npm install @valtren-ai/extension-sdk@^0.2.0
 ```
 
 ## Publishing
@@ -74,7 +101,7 @@ npm install @valtren-ai/extension-sdk@^0.1.0
 Recommended first release flow:
 
 1. add `NPM_TOKEN` as a GitHub Actions secret
-2. create a version tag such as `v0.1.0`
+2. create a version tag such as `v0.2.0`
 3. push the tag
 4. let the publish workflow release the package to npm
 

@@ -1,13 +1,17 @@
 # Changelog
 
-All notable changes to `@valtren-ai/extension-sdk` will be documented in this file.
+## 0.2.0
 
-The format is based on Keep a Changelog, and versions follow semantic versioning.
+- added `create-valtren-extension` scaffold CLI
+- added starter templates for:
+  - `node-pack`
+  - `org-zip-node`
+  - `org-zip-python`
+  - `sidecar-python`
+- updated SDK docs to show scaffold usage
 
-## [0.1.0] - 2026-03-27
+## 0.1.0
 
-### Added
-- Initial public SDK release for Valtren AI extensions.
-- Extension manifest helpers and validation utilities.
-- Agent catalog and step executor type definitions.
-- Build-ready TypeScript packaging and npm publish workflow.
+- initial public release
+- manifest helpers and validation utilities
+- npm publishing and release workflow
