@@ -45,7 +45,7 @@ function parseArgs(argv) {
 }
 
 function printHelp() {
-  console.log(`Create a Valtren AI extension scaffold.\n\nUsage:\n  create-valtren-extension <name> [--runtime <runtime>] [--dir <output-dir>]\n\nSupported runtimes:\n  node-pack\n  org-zip-node\n  org-zip-python\n  sidecar-python\n`);
+  console.log(`Create a Valtren AI extension scaffold.\n\nUsage:\n  create-valtren-extension <name> [--runtime <runtime>] [--dir <output-dir>]\n\nSupported runtimes:\n  node-pack\n  org-zip-node\n  org-zip-python\n  sidecar-python\n  sidecar-java\n  sidecar-dotnet\n`);
 }
 
 function toLabel(name) {
@@ -65,8 +65,9 @@ function replaceTokens(content, vars) {
 function copyDir(src, dest, vars) {
   fs.mkdirSync(dest, { recursive: true });
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
+    const renderedName = replaceTokens(entry.name, vars);
     const srcPath = path.join(src, entry.name);
-    const destPath = path.join(dest, entry.name);
+    const destPath = path.join(dest, renderedName);
     if (entry.isDirectory()) {
       copyDir(srcPath, destPath, vars);
     } else {

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1
+
+- added scaffold templates for:
+  - `sidecar-java`
+  - `sidecar-dotnet`
+- updated CLI docs and runtime help output
+
 ## 0.2.0
 
 - added `create-valtren-extension` scaffold CLI

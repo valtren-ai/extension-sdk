@@ -60,6 +60,8 @@ Supported runtime templates:
 - `org-zip-node`
 - `org-zip-python`
 - `sidecar-python`
+- `sidecar-java`
+- `sidecar-dotnet`
 
 You can also choose a target directory:
 
