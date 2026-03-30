@@ -94,4 +94,5 @@ console.log(`Created ${runtime} scaffold at ${outDir}`);
 console.log('Next steps:');
 console.log('1. Replace the placeholder descriptions and business logic.');
 console.log('2. Read the versioning, testing, and security guides in valtren-ai/extension-examples.');
-console.log('3. Add health or smoke-test coverage before your first real release.');
+console.log('3. For org ZIP runtimes, keep public routes under /api/ext/<stable-extension-key>/....');
+console.log('4. Add health or smoke-test coverage before your first real release.');

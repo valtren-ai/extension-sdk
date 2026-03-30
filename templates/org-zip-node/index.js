@@ -1,10 +1,10 @@
-export default async function register(app) {
-  app.get('/health', async () => ({
+export default async function register({ app }) {
+  app.get('/api/ext/__NAME__/health', async () => ({
     ok: true,
     service: '__NAME__',
   }));
 
-  app.post('/review', async (request) => {
+  app.post('/api/ext/__NAME__/review', async (request) => {
     return {
       ok: true,
       extension: '__NAME__',
