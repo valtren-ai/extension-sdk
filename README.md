@@ -80,6 +80,7 @@ The generated scaffold is intentionally small. After scaffolding:
 
 - replace placeholder descriptions and logic
 - read the guides in `valtren-ai/extension-examples`
+- for org ZIP runtimes, keep public routes under `/api/ext/<stable-extension-key>/...`
 - add health, smoke-test, versioning, and rollback notes before production rollout
 
 ## Build and publish

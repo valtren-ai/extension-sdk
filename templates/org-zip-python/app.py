@@ -5,12 +5,12 @@ PORT = int(os.getenv("PORT", "8080"))
 app = FastAPI(title="__NAME__")
 
 
-@app.get('/health')
+@app.get('/api/ext/__NAME__/health')
 def health():
     return {"ok": True, "service": "__NAME__"}
 
 
-@app.post('/review')
+@app.post('/api/ext/__NAME__/review')
 def review(payload: dict):
     return {
         "ok": True,
